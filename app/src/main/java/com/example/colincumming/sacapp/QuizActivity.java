@@ -14,17 +14,17 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     public void startFam(View view) {
-        Intent intent = new Intent(this, FamActivity.class);
+        Intent intent = new Intent(this, famActivity.class);
         startActivity(intent);
     }
 
-    public void startRel(View view){
-        Intent intent = new Intent(this, RelActivity.class);
+    /*public void startRel(View view){
+        Intent intent = new Intent(this, relActivity.class);
         startActivity(intent);
     }
 
     public void startFriend(View view) {
-        Intent intent = new Intent(this, FriendActivity.class);
+        Intent intent = new Intent(this, friendActivity.class);
         startActivity(intent);
     }
 
@@ -36,5 +36,5 @@ public class QuizActivity extends AppCompatActivity {
     public void startHome(View view) {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
-    }
+    }*/
 }

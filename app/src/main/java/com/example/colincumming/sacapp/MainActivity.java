@@ -25,11 +25,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void startSAC(View view) {
+    /*public void startSAC(View view) {
 
         Intent intent = new Intent(this, SACActivity.class);
         startActivity(intent);
-    }
+    }*/
 
     public void startHome(View view) {
 

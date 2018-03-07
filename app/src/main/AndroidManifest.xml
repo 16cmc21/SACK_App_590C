@@ -16,7 +16,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".QuizActivity"></activity>
+        <activity android:name=".QuizActivity" />
+        <activity android:name=".famActivity" />
+        <activity android:name=".trustActivity" />
+        <activity android:name=".avoidActivity" />
+        <activity android:name=".fam2Activity" />
+        <activity android:name=".adultActivity" />
+        <activity android:name=".nothActivity" />
+        <activity android:name=".famResActivity" />
+        <activity android:name=".ResActivity"></activity>
     </application>
 
 </manifest>
