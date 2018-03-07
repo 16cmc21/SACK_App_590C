@@ -24,7 +24,8 @@
         <activity android:name=".adultActivity" />
         <activity android:name=".nothActivity" />
         <activity android:name=".famResActivity" />
-        <activity android:name=".ResActivity"></activity>
+        <activity android:name=".ResActivity" />
+        <activity android:name=".SACActivity"></activity>
     </application>
 
 </manifest>

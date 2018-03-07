@@ -10,16 +10,24 @@
         android:id="@+id/button8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="148dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="169dp"
         android:onClick="startHome"
         android:text="Home"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="253dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="155dp"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="65dp"
         android:text="Resources"
-        tools:layout_editor_absoluteX="163dp"
-        tools:layout_editor_absoluteY="65dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

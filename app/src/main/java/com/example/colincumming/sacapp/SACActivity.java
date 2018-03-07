@@ -5,18 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class SACActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
-
-    public void startQuiz(View view) {
-
-        Intent intent = new Intent(this, QuizActivity.class);
-        startActivity(intent);
+        setContentView(R.layout.activity_sac);
     }
 
     public void startResources(View view) {
@@ -25,16 +19,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void startSAC(View view) {
-
-        Intent intent = new Intent(this, SACActivity.class);
-        startActivity(intent);
-    }
-
     public void startHome(View view) {
-
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
-
 }
