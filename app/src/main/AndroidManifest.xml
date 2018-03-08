@@ -25,7 +25,21 @@
         <activity android:name=".nothActivity" />
         <activity android:name=".famResActivity" />
         <activity android:name=".ResActivity" />
-        <activity android:name=".SACActivity"></activity>
+        <activity android:name=".SACActivity" />
+        <activity android:name=".involvedActivity" />
+        <activity android:name=".ignoreActivity" />
+        <activity android:name=".doneActivity" />
+        <activity android:name=".followActivity" />
+        <activity android:name=".friend2Activity" />
+        <activity android:name=".friendResActivity" />
+        <activity android:name=".friendActivity" />
+        <activity android:name=".relActivity" />
+        <activity android:name=".participateActivity" />
+        <activity android:name=".notEngActivity" />
+        <activity android:name=".rel2Activity" />
+        <activity android:name=".pressureActivity" />
+        <activity android:name=".respectActivity" />
+        <activity android:name=".relResActivity"></activity>
     </application>
 
 </manifest>

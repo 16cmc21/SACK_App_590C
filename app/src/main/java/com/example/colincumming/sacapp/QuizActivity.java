@@ -9,6 +9,7 @@ public class QuizActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
     }
@@ -18,7 +19,7 @@ public class QuizActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    /*public void startRel(View view){
+    public void startRel(View view){
         Intent intent = new Intent(this, relActivity.class);
         startActivity(intent);
     }
@@ -31,7 +32,7 @@ public class QuizActivity extends AppCompatActivity {
     public void startR(View view) {
         Intent intent  = new Intent(this, ResActivity.class);
         startActivity(intent);
-    }*/
+    }
 
     public void startHome(View view) {
         Intent intent = new Intent(this, MainActivity.class);
