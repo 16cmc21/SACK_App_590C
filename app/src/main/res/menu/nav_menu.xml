@@ -4,17 +4,14 @@
     <item
         android:id="@+id/home_select"
         android:icon="@drawable/ic_home_black"
-        android:onClick="startHome"
         android:title="@string/home" />
 
     <item
         android:icon="@drawable/ic_info_black"
-        android:onClick="startSAC"
         android:title="@string/about" />
 
     <item
         android:icon="@drawable/ic_phone_black"
-        android:onClick="startResources"
         android:title="@string/resources" />
 
 </menu>

@@ -12,14 +12,15 @@
 
     <!-- IMAGE FORMATTING -->
     <ImageView
-        android:layout_width="224dp"
-        android:layout_height="290dp"
+        android:id="@+id/imageView"
+        android:layout_width="235dp"
+        android:layout_height="376dp"
         android:layout_marginLeft="150dp"
         android:layout_marginStart="165dp"
         android:layout_marginTop="198dp"
         android:src="@drawable/homepagegirl"
         tools:layout_editor_absoluteX="180dp"
-        tools:layout_editor_absoluteY="197dp" />
+        tools:layout_editor_absoluteY="266dp" />
 
     <!-- FAMILY BUTTON -->
     <Button
@@ -53,21 +54,14 @@
         android:text="@string/resourceButton"
         android:textColor="@color/textColor" />
 
-
-    <!-- TASK BAR FORMATTING -->
-    <FrameLayout
+    <!--Here is the bottom nav view that I added -->
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom">
-
-        <android.support.design.widget.BottomNavigationView
-            android:id="@+id/Navbot"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            design:menu="@menu/nav_menu"
-            />
-
-    </FrameLayout>
+        app:layout_anchor="@+id/imageView"
+        app:layout_anchorGravity="left|bottom"
+        design:menu="@menu/nav_menu" />
 
 
 </android.support.design.widget.CoordinatorLayout>
