@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:design="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,60 +8,146 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="false"
     android:visibility="visible"
-    tools:context="com.example.colincumming.sacapp.MainActivity">
+    tools:context="com.example.colincumming.sacapp.MainActivity"
+    tools:ignore="ExtraText">
 
-    <!-- IMAGE FORMATTING -->
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="235dp"
-        android:layout_height="376dp"
-        android:layout_marginLeft="150dp"
-        android:layout_marginStart="165dp"
-        android:layout_marginTop="198dp"
-        android:src="@drawable/homepagegirl"
-        tools:layout_editor_absoluteX="180dp"
-        tools:layout_editor_absoluteY="266dp" />
 
-    <!-- FAMILY BUTTON -->
-    <Button
-        android:layout_width="90dp"
-        android:layout_height="45dp"
-        android:layout_marginLeft="35dp"
-        android:layout_marginTop="250dp"
-        android:background="@color/buttonColor"
-        android:onClick="startQuiz"
-        android:text="@string/quizzesButton"
 
-        android:textColor="@color/textColor" />
-    <!-- ABOUT BUTTON -->
-    <Button
-        android:layout_width="90dp"
-        android:layout_height="60dp"
-        android:layout_marginLeft="35dp"
-        android:layout_marginTop="300dp"
-        android:background="@color/buttonColor"
-        android:onClick="startSAC"
-        android:text="@string/aboutButton"
-        android:textColor="@color/textColor" />
-    <!-- RESOURCES BUTTON -->
-    <Button
-        android:layout_width="110dp"
-        android:layout_height="60dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="365dp"
-        android:background="@color/buttonColor"
-        android:onClick="startResources"
-        android:text="@string/resourceButton"
-        android:textColor="@color/textColor" />
 
     <!--Here is the bottom nav view that I added -->
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_anchor="@+id/imageView"
-        app:layout_anchorGravity="left|bottom"
+        android:background="@color/navBar"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         design:menu="@menu/nav_menu" />
 
+    <!-- FAMILY BUTTON -->
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="184dp"
+        android:layout_marginTop="192dp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="startQuiz"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        design:srcCompat="@drawable/buttonsmall" />
 
-</android.support.design.widget.CoordinatorLayout>
+    <!-- RESOURCES BUTTON -->
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="90dp"
+        android:layout_marginEnd="184dp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="startResources"
+        app:layout_constraintBottom_toTopOf="@+id/girlHome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton6"
+        design:srcCompat="@drawable/buttonsmall" />
+
+    <!-- ABOUT BUTTON -->
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="170dp"
+        android:layout_marginEnd="187dp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="startSAC"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        design:srcCompat="@drawable/buttonsmall" />
+
+    <TextView
+        android:id="@+id/textQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Quizzes"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/imageButton6"
+        app:layout_constraintLeft_toLeftOf="@id/imageButton6"
+        app:layout_constraintRight_toRightOf="@id/imageButton6"
+        app:layout_constraintTop_toTopOf="@id/imageButton6"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="317dp" />
+
+    <TextView
+        android:id="@+id/textResources"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resources"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/imageButton7"
+        app:layout_constraintLeft_toLeftOf="@id/imageButton7"
+        app:layout_constraintRight_toRightOf="@id/imageButton7"
+        app:layout_constraintTop_toTopOf="@id/imageButton7"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="411dp" />
+
+    <TextView
+        android:id="@+id/textAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About SAC"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/imageButton8"
+        app:layout_constraintLeft_toLeftOf="@id/imageButton8"
+        app:layout_constraintRight_toRightOf="@id/imageButton8"
+        app:layout_constraintTop_toTopOf="@id/imageButton8"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="512dp" />
+
+    <!-- IMAGE FORMATTING -->
+    <ImageView
+        android:id="@+id/girlHome"
+        android:layout_width="316dp"
+        android:layout_height="376dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageBubble"
+        design:srcCompat="@drawable/girlresize" />
+
+    <ImageView
+        android:id="@+id/imageBubble"
+        android:layout_width="409dp"
+        android:layout_height="275dp"
+        design:srcCompat="@drawable/textbubble"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="392dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="40dp"
+        android:text="Welcome to the Sexual Assault Centre of Kingston's application &quot;Choices&quot;. Please select an option below."
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="@id/imageBubble"
+        app:layout_constraintRight_toRightOf="@id/imageBubble"
+        app:layout_constraintTop_toTopOf="@+id/imageBubble" />
+
+
+</android.support.constraint.ConstraintLayout>

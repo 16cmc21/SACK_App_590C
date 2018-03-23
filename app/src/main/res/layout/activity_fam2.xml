@@ -52,5 +52,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        design:menu="@menu/nav_menu" />
+        design:menu="@menu/nav_menu"
+        android:background="@color/navBar"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"/>
 </android.support.constraint.ConstraintLayout>
