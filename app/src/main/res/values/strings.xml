@@ -15,4 +15,33 @@
         <string name="resources">Resources</string>
         <string name="home">Home</string>
 
+    <!-- linkable text views -->
+    <string name="linkNationalChildAbuse">
+    <a href="https://www.childhelp.org/hotline/resources-kids/."> hannah </a>
+    </string>
+    <string name="link1Crisis">
+        <a href= "http://sackingston.com/"> SAC Kingston</a>
+    </string>
+    <string name="link1CounsellingServices">
+        <a href= " http://sackingston.com/"> SAC Kingston</a>
+    </string>
+    <string name="link2CounsellingServices">
+        <a href= "http://maltbycentre.ca/"> Maltby Center</a>
+    </string>
+    <string name="link3CounsellingServices">
+        <a href= "https://resolvecounselling.org/"> Resolve Counselling </a>
+    </string>
+    <string name="link1Fam">
+        <a href= "https://www.childhelp.org/hotline/resources-kids/."> National Child Abuse hotline </a>
+    </string>
+    <string name="link2Fam">
+        <a href= "http://www.facsfla.ca/"> Family and Children Services </a>
+    </string>
+    <string name= "link3Fam">
+        <a href= "http://kingstonintervalhouse.com"> Kingston Interval House </a>
+    </string>
+    <string name= "Bystander">
+        <a href= "http://www.queensu.ca/studentaffairs/student-safety/sexual-violence-prevention-and-response/sexual-violence-bystander-intervention"> Queen’s Bystander Intervention Program </a>
+</string>
+
 </resources>

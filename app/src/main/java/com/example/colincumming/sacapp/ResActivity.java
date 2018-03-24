@@ -5,8 +5,10 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.method.LinkMovementMethod;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 
 public class ResActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
@@ -25,6 +27,22 @@ public class ResActivity extends AppCompatActivity {
                 return true;
             }
         });
+        TextView t1 = (TextView) findViewById(R.id.textView36);
+                 t1.setMovementMethod(LinkMovementMethod.getInstance());
+        TextView t2 = (TextView) findViewById(R.id.council1);
+                t2.setMovementMethod(LinkMovementMethod.getInstance());
+        TextView t3 = (TextView) findViewById(R.id.maltbyCentre);
+                t3.setMovementMethod(LinkMovementMethod.getInstance());
+        TextView t4 = (TextView) findViewById(R.id.resolveCouncil);
+                t4.setMovementMethod(LinkMovementMethod.getInstance());
+        TextView t5 = (TextView) findViewById(R.id.textView38);
+                t5.setMovementMethod(LinkMovementMethod.getInstance());
+        TextView t6 = (TextView) findViewById(R.id.textView37);
+                t6.setMovementMethod(LinkMovementMethod.getInstance());
+        TextView t7 = (TextView) findViewById(R.id.textView30);
+                t7.setMovementMethod(LinkMovementMethod.getInstance());
+        TextView t8 = (TextView) findViewById(R.id.textView32);
+                t8.setMovementMethod(LinkMovementMethod.getInstance());
     }
     public void startHome(View view){
         Intent intent = new Intent(this, MainActivity.class);
