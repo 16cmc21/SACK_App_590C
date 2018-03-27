@@ -11,39 +11,13 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="154dp"
-        android:layout_marginStart="163dp"
-        android:layout_marginTop="66dp"
-        android:text="Question 2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="232dp"
-        android:layout_marginEnd="67dp"
-        android:layout_marginStart="67dp"
-        android:onClick="startAdult"
-        android:text="Tell Adult"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button5"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="232dp"
-        android:layout_marginEnd="105dp"
-        android:layout_marginStart="67dp"
-        android:onClick="startNothing"
-        android:text="Do nothing"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button4" />
+        android:text="A relative has previously made you feel sexually uncomfortable by having you unwillingly watch pornography or photographing you undressed. What do you do?"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteY="66dp" />
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
@@ -56,4 +30,80 @@
         android:background="@color/navBar"
         app:itemIconTint="@color/white"
         app:itemTextColor="@color/white"/>
+
+    <ImageButton
+        android:id="@+id/imageButton12"
+        android:layout_width="203dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="200dp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="startAdult"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintRight_toRightOf="parent"
+        design:srcCompat="@drawable/buttonsmall" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tell an adult"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="@id/imageButton12"
+        app:layout_constraintRight_toRightOf="@id/imageButton12"
+        app:layout_constraintTop_toTopOf="@id/imageButton12"
+        app:layout_constraintBottom_toBottomOf="@id/imageButton12"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="338dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton13"
+        android:layout_width="203dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="200dp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="startNothing"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintLeft_toLeftOf="parent"
+        design:srcCompat="@drawable/buttonsmall" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do nothing"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="@id/imageButton13"
+        app:layout_constraintRight_toRightOf="@id/imageButton13"
+        app:layout_constraintTop_toTopOf="@id/imageButton13"
+        app:layout_constraintBottom_toBottomOf="@id/imageButton13"
+        tools:layout_editor_absoluteX="193dp"
+        tools:layout_editor_absoluteY="533dp" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="206dp"
+        android:layout_height="101dp"
+        android:text="You do nothing and avoid the relative"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@id/imageButton13"
+        app:layout_constraintRight_toRightOf="@id/imageButton13"
+        app:layout_constraintBottom_toTopOf="@id/imageButton13"
+        tools:layout_editor_absoluteX="209dp"
+        tools:layout_editor_absoluteY="253dp" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="203dp"
+        android:layout_height="102dp"
+        android:text="You tell a parent or another adult that you trust"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@id/imageButton12"
+        app:layout_constraintRight_toRightOf="@id/imageButton12"
+        app:layout_constraintBottom_toTopOf="@id/imageButton12"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="252dp" />
 </android.support.constraint.ConstraintLayout>

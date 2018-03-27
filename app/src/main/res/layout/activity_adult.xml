@@ -18,5 +18,44 @@
         android:background="@color/navBar"
         app:itemIconTint="@color/white"
         app:itemTextColor="@color/white"/>
+
+    <ImageButton
+        android:id="@+id/imageButton10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="185dp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="startCont2"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        design:srcCompat="@drawable/buttonsmall" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="@id/imageButton10"
+        app:layout_constraintRight_toRightOf="@id/imageButton10"
+        app:layout_constraintTop_toTopOf="@id/imageButton10"
+        app:layout_constraintBottom_toBottomOf="@id/imageButton10"
+        tools:layout_editor_absoluteX="157dp"
+        tools:layout_editor_absoluteY="392dp" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The adults will assist in preventing the problem from occurring again. If you tell an adult, this adult will have the duty to report the situation to the police. If they don’t report, keep telling someone again until they do. What they are doing is a crime. Know that you are not alone and there is help. You can also call the police yourself.   "
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="41dp" />
 </android.support.constraint.ConstraintLayout>
 

@@ -19,4 +19,42 @@
         app:itemIconTint="@color/white"
         app:itemTextColor="@color/white"/>
 
+    <TextView
+        android:id="@+id/textView64"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="It’s good that you recognize the problem in this situation. The intoxicated person is vulnerable and cannot give consent to any physical or sexual touching. Be careful about your involvement, you should get directly involved only if you can maintain your own safety. Other ways to get directly involved, include informing a trusted adult or friend who can help in this situation, or getting a group of friends together to casually break up the private moment. "
+        android:textAlignment="center"
+        android:textSize="21sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="startCont"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView64"
+        design:srcCompat="@drawable/buttonsmall" />
+
+    <TextView
+        android:id="@+id/textView65"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="@id/imageButton19"
+        app:layout_constraintRight_toRightOf="@id/imageButton19"
+        app:layout_constraintTop_toTopOf="@id/imageButton19"
+        app:layout_constraintBottom_toBottomOf="@id/imageButton19"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="303dp" />
+
 </android.support.constraint.ConstraintLayout>

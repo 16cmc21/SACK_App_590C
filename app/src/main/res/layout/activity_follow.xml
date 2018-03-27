@@ -19,4 +19,42 @@
         app:itemIconTint="@color/white"
         app:itemTextColor="@color/white"/>
 
+    <ImageButton
+        android:id="@+id/imageButton22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="startCont"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView71"
+        design:srcCompat="@drawable/buttonsmall" />
+
+    <TextView
+        android:id="@+id/textView71"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="It’s a good first step to talk to both people after this separately. Your friend needs to know that this behaviour is not okay. The victim may need support, but they could also not want to talk about the situation. This can be a difficult position to be in. The important thing is to be there for the people involved in any way you can. A big part of helping is listening! You can also point them to resources that might help them."
+        android:textAlignment="center"
+        android:textSize="23sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView72"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="@id/imageButton22"
+        app:layout_constraintRight_toRightOf="@id/imageButton22"
+        app:layout_constraintTop_toTopOf="@id/imageButton22"
+        app:layout_constraintBottom_toBottomOf="@id/imageButton22"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="303dp" />
+
 </android.support.constraint.ConstraintLayout>

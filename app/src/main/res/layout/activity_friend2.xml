@@ -19,5 +19,92 @@
         app:itemIconTint="@color/white"
         app:itemTextColor="@color/white"/>
 
+    <ImageButton
+        android:id="@+id/imageButton20"
+        android:layout_width="203dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="199dp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="startDone"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintLeft_toLeftOf="parent"
+        design:srcCompat="@drawable/buttonsmall" />
+
+    <ImageButton
+        android:id="@+id/imageButton21"
+        android:layout_width="203dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="199dp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="startFollow"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintRight_toRightOf="parent"
+        design:srcCompat="@drawable/buttonsmall" />
+
+    <TextView
+        android:id="@+id/textView66"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="163dp"
+        android:layout_marginStart="163dp"
+        android:text="The situation has broken up. Should you do anything else?"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/textView67"
+        android:layout_width="203dp"
+        android:layout_height="102dp"
+        android:text="No, I’ve done my job the situation is broken up and there’s no problem anymore."
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@id/imageButton20"
+        app:layout_constraintRight_toRightOf="@id/imageButton20"
+        app:layout_constraintBottom_toTopOf="@id/imageButton20"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="252dp" />
+
+    <TextView
+        android:id="@+id/textView68"
+        android:layout_width="206dp"
+        android:layout_height="101dp"
+        android:text="Yes, I should follow up with the drunk person and my friend."
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@id/imageButton21"
+        app:layout_constraintRight_toRightOf="@id/imageButton21"
+        app:layout_constraintBottom_toTopOf="@id/imageButton21"
+        tools:layout_editor_absoluteX="209dp"
+        tools:layout_editor_absoluteY="253dp" />
+
+    <TextView
+        android:id="@+id/textView69"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No my job is done"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@id/imageButton20"
+        app:layout_constraintRight_toRightOf="@id/imageButton20"
+        app:layout_constraintTop_toTopOf="@id/imageButton20"
+        app:layout_constraintBottom_toBottomOf="@id/imageButton20"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="374dp" />
+
+    <TextView
+        android:id="@+id/textView70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Follow up"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/imageButton21"
+        app:layout_constraintLeft_toLeftOf="@id/imageButton21"
+        app:layout_constraintRight_toRightOf="@id/imageButton21"
+        app:layout_constraintTop_toTopOf="@id/imageButton21" />
+
 
 </android.support.constraint.ConstraintLayout>

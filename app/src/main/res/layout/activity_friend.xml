@@ -19,4 +19,93 @@
         app:itemIconTint="@color/white"
         app:itemTextColor="@color/white"/>
 
+    <ImageButton
+        android:id="@+id/imageButton16"
+        android:layout_width="203dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="125dp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="startInvolved"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintLeft_toLeftOf="parent"
+        design:srcCompat="@drawable/buttonsmall" />
+
+    <ImageButton
+        android:id="@+id/imageButton17"
+        android:layout_width="203dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="125dp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="startIgnore"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintRight_toRightOf="parent"
+        design:srcCompat="@drawable/buttonsmall" />
+
+    <TextView
+        android:id="@+id/textView57"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="163dp"
+        android:layout_marginStart="163dp"
+        android:text="You’re out with your friends at a party. Everyone at the party is drinking and you’re having a really fun time. You notice your friend has disappeared, and as you track them down you see them heading upstairs with someone they’ve been flirting with for a while. You know that the person they are with has had too much to drink. What's your next step?"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/textView58"
+        android:layout_width="203dp"
+        android:layout_height="102dp"
+        android:text="You go upstairs and decide to get directly involved."
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@id/imageButton16"
+        app:layout_constraintRight_toRightOf="@id/imageButton16"
+        app:layout_constraintBottom_toTopOf="@id/imageButton16"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="252dp" />
+
+    <TextView
+        android:id="@+id/textView59"
+        android:layout_width="206dp"
+        android:layout_height="101dp"
+        android:text="You ignore it. Your friend has been trying to get with this person for a really long time and you don’t want to ruin their chance."
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@id/imageButton17"
+        app:layout_constraintRight_toRightOf="@id/imageButton17"
+        app:layout_constraintBottom_toTopOf="@id/imageButton17"
+        tools:layout_editor_absoluteX="209dp"
+        tools:layout_editor_absoluteY="253dp"  />
+
+    <TextView
+        android:id="@+id/textView60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get involved"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/imageButton16"
+        app:layout_constraintLeft_toLeftOf="@id/imageButton16"
+        app:layout_constraintRight_toRightOf="@id/imageButton16"
+        app:layout_constraintTop_toTopOf="@id/imageButton16"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="461dp" />
+
+    <TextView
+        android:id="@+id/textView61"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ignore it"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="@id/imageButton17"
+        app:layout_constraintRight_toRightOf="@id/imageButton17"
+        app:layout_constraintTop_toTopOf="@id/imageButton17"
+        app:layout_constraintBottom_toBottomOf="@id/imageButton17"
+        tools:layout_editor_absoluteX="294dp"
+        tools:layout_editor_absoluteY="457dp" />
+
 </android.support.constraint.ConstraintLayout>

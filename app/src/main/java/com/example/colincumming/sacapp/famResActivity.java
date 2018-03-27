@@ -5,8 +5,10 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.method.LinkMovementMethod;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 
 public class famResActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
@@ -25,6 +27,13 @@ public class famResActivity extends AppCompatActivity {
                 return true;
             }
         });
+        setContentView(R.layout.activity_fam_res);
+        TextView t9 = (TextView) findViewById(R.id.textView8);
+        t9.setMovementMethod(LinkMovementMethod.getInstance());
+        TextView t10 = (TextView) findViewById(R.id.textView9);
+        t10.setMovementMethod(LinkMovementMethod.getInstance());
+        TextView t12 = (TextView) findViewById(R.id.textView10);
+        t12.setMovementMethod(LinkMovementMethod.getInstance());
     }
     public void startResources() {
 
