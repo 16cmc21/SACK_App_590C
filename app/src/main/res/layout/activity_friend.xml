@@ -71,14 +71,12 @@
         android:id="@+id/textView59"
         android:layout_width="206dp"
         android:layout_height="101dp"
-        android:text="You ignore it. Your friend has been trying to get with this person for a really long time and you don’t want to ruin their chance."
+        android:text="You ignore it. Your friend has been trying to get with this person for a long time."
         android:textAlignment="center"
         android:textSize="20sp"
-        app:layout_constraintLeft_toLeftOf="@id/imageButton17"
-        app:layout_constraintRight_toRightOf="@id/imageButton17"
         app:layout_constraintBottom_toTopOf="@id/imageButton17"
-        tools:layout_editor_absoluteX="209dp"
-        tools:layout_editor_absoluteY="253dp"  />
+        app:layout_constraintLeft_toLeftOf="@id/imageButton17"
+        app:layout_constraintRight_toRightOf="@id/imageButton17" />
 
     <TextView
         android:id="@+id/textView60"

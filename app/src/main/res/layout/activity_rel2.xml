@@ -19,5 +19,86 @@
         app:itemIconTint="@color/white"
         app:itemTextColor="@color/white"/>
 
+    <TextView
+        android:id="@+id/textView86"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="163dp"
+        android:layout_marginStart="163dp"
+        android:text="You explain that you’re not ready for this next step, and why the situation is making you uncomfortable. What do you think is the most likely reaction from your partner? "
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton29"
+        android:layout_width="203dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="199dp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="startPressure"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintLeft_toLeftOf="parent"
+        design:srcCompat="@drawable/buttonsmall" />
+
+    <ImageButton
+        android:id="@+id/imageButton30"
+        android:layout_width="203dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="199dp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="startRespect"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintRight_toRightOf="parent"
+        design:srcCompat="@drawable/buttonsmall" />
+
+    <TextView
+        android:id="@+id/textView87"
+        android:layout_width="206dp"
+        android:layout_height="101dp"
+        android:text="Your partner will continue to pressure you."
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/imageButton29"
+        app:layout_constraintLeft_toLeftOf="@id/imageButton29"
+        app:layout_constraintRight_toRightOf="@id/imageButton29" />
+
+    <TextView
+        android:id="@+id/textView88"
+        android:layout_width="206dp"
+        android:layout_height="101dp"
+        android:text="Your partner will respect your decision."
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/imageButton30"
+        app:layout_constraintLeft_toLeftOf="@id/imageButton30"
+        app:layout_constraintRight_toRightOf="@id/imageButton30" />
+
+    <TextView
+        android:id="@+id/textView89"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue to pressure"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/imageButton29"
+        app:layout_constraintLeft_toLeftOf="@id/imageButton29"
+        app:layout_constraintRight_toRightOf="@id/imageButton29"
+        app:layout_constraintTop_toTopOf="@id/imageButton29" />
+
+    <TextView
+        android:id="@+id/textView90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Respect decision"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/imageButton30"
+        app:layout_constraintLeft_toLeftOf="@id/imageButton30"
+        app:layout_constraintRight_toRightOf="@id/imageButton30"
+        app:layout_constraintTop_toTopOf="@id/imageButton30" />
+
 
 </android.support.constraint.ConstraintLayout>

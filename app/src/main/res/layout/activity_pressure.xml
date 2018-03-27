@@ -19,4 +19,42 @@
         app:itemIconTint="@color/white"
         app:itemTextColor="@color/white"/>
 
+    <TextView
+        android:id="@+id/textView93"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You may want to rethink the state of your relationship. Take time to self-reflect and ask yourself “Am I in a healthy relationship?” There are counselling resources provided at the end of this quiz and on the resource page that can help you figure out the answer to this question."
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="startCont"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView93"
+        design:srcCompat="@drawable/buttonsmall" />
+
+    <TextView
+        android:id="@+id/textView94"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="@id/imageButton32"
+        app:layout_constraintRight_toRightOf="@id/imageButton32"
+        app:layout_constraintTop_toTopOf="@id/imageButton32"
+        app:layout_constraintBottom_toBottomOf="@id/imageButton32"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="303dp" />
+
 </android.support.constraint.ConstraintLayout>

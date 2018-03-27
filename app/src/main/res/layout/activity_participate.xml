@@ -19,4 +19,42 @@
         app:itemIconTint="@color/white"
         app:itemTextColor="@color/white"/>
 
+    <TextView
+        android:id="@+id/textView84"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Being intimidated by your partner or by the actions he/she may take by not getting sex suggests that you are in an unhealthy relationship. You should reflect on the state of your relationship and if it a healthy one. In a healthy relationship you should never feel like you have to do something to please another person. Your partner should never pressure you to do something you’re uncomfortable with. You should feel comfortable to talk to your partner about your feelings. "
+        android:textAlignment="center"
+        android:textSize="22sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="startCont"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView84"
+        design:srcCompat="@drawable/buttonsmall" />
+
+    <TextView
+        android:id="@+id/textView85"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="@id/imageButton28"
+        app:layout_constraintRight_toRightOf="@id/imageButton28"
+        app:layout_constraintTop_toTopOf="@id/imageButton28"
+        app:layout_constraintBottom_toBottomOf="@id/imageButton28"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="303dp" />
+
 </android.support.constraint.ConstraintLayout>

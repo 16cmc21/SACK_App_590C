@@ -19,5 +19,43 @@
         app:itemIconTint="@color/white"
         app:itemTextColor="@color/white"/>
 
+    <TextView
+        android:id="@+id/textView82"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If you are uncomfortable or unsure about a situation it is okay to take time to think about your decision. You are allowed to make choices about what you do and do not do sexually with consenting partners. Everyone makes these choices at different times in their lives. It is your body, and your decision. If you are in a healthy relationship, your partner will respect these choices. "
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="startCont"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView82"
+        design:srcCompat="@drawable/buttonsmall" />
+
+    <TextView
+        android:id="@+id/textView83"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="@id/imageButton27"
+        app:layout_constraintRight_toRightOf="@id/imageButton27"
+        app:layout_constraintTop_toTopOf="@id/imageButton27"
+        app:layout_constraintBottom_toBottomOf="@id/imageButton27"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="303dp" />
+
 
 </android.support.constraint.ConstraintLayout>

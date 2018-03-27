@@ -19,4 +19,71 @@
         app:itemIconTint="@color/white"
         app:itemTextColor="@color/white"/>
 
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="250dp"
+        android:text="Queen’s Student Wellness Services Call 613-533-6000 ext. 75320 or email healthed@queensu.ca "
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="405dp"
+        android:layout_height="72dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="St. Lawrence College Counselling Service Call 613-544-5400 ext. 1593.  "
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Below is a list of helpful resources regarding sexual assualt and abuse specific to families. More resources can be found by clicking on the button below or navigating to the resource page with the navigation bar below."
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="73dp"/>
+
+    <ImageButton
+        android:id="@+id/imageButton33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="startResources"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        design:srcCompat="@drawable/buttonsmall"  />
+
+    <TextView
+        android:id="@+id/textView96"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="More resources"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintRight_toRightOf="@id/imageButton33"
+        app:layout_constraintLeft_toLeftOf="@id/imageButton33"
+        app:layout_constraintTop_toTopOf="@id/imageButton33"
+        app:layout_constraintBottom_toBottomOf="@id/imageButton33"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="506dp" />
+
 </android.support.constraint.ConstraintLayout>

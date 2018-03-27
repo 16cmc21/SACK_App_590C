@@ -19,4 +19,42 @@
         app:itemIconTint="@color/white"
         app:itemTextColor="@color/white"/>
 
+    <TextView
+        android:id="@+id/textView91"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This sounds like a healthy relationship. Your partner listened to you, and respected your decision not to participate. You will be happy and respect yourself for doing what you feel comfortable with."
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="startCont"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView91"
+        design:srcCompat="@drawable/buttonsmall" />
+
+    <TextView
+        android:id="@+id/textView92"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="@id/imageButton31"
+        app:layout_constraintRight_toRightOf="@id/imageButton31"
+        app:layout_constraintTop_toTopOf="@id/imageButton31"
+        app:layout_constraintBottom_toBottomOf="@id/imageButton31"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="303dp" />
+
 </android.support.constraint.ConstraintLayout>

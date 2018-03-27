@@ -19,4 +19,87 @@
         app:itemIconTint="@color/white"
         app:itemTextColor="@color/white"/>
 
+    <TextView
+        android:id="@+id/textView75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="163dp"
+        android:layout_marginStart="163dp"
+        android:text="You’ve been dating someone for a while, and having a really fun time. You really like this person, but lately they’ve been pressuring you to participate in sexual activity. They want to do things that you aren’t comfortable with. You don’t feel ready for this next step in your relationship. Do you participate in the sexual activities even though you are uncomfortable?"
+        android:textAlignment="center"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton25"
+        android:layout_width="203dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="125dp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="startParticipate"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintLeft_toLeftOf="parent"
+        design:srcCompat="@drawable/buttonsmall" />
+
+    <ImageButton
+        android:id="@+id/imageButton26"
+        android:layout_width="203dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="125dp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="startAvoid"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintRight_toRightOf="parent"
+        design:srcCompat="@drawable/buttonsmall" />
+
+    <TextView
+        android:id="@+id/textView78"
+        android:layout_width="206dp"
+        android:layout_height="101dp"
+        android:text="You decide to participate because you love your partner and don't want to break up."
+        android:textAlignment="center"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toTopOf="@id/imageButton25"
+        app:layout_constraintLeft_toLeftOf="@id/imageButton25"
+        app:layout_constraintRight_toRightOf="@id/imageButton25" />
+
+    <TextView
+        android:id="@+id/textView79"
+        android:layout_width="206dp"
+        android:layout_height="101dp"
+        android:text="You decide to have not to engage in sexual activity."
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@id/imageButton26"
+        app:layout_constraintRight_toRightOf="@id/imageButton26"
+        app:layout_constraintBottom_toTopOf="@id/imageButton26"
+        tools:layout_editor_absoluteX="209dp"
+        tools:layout_editor_absoluteY="253dp"/>
+
+    <TextView
+        android:id="@+id/textView80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You participate"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/imageButton25"
+        app:layout_constraintLeft_toLeftOf="@id/imageButton25"
+        app:layout_constraintRight_toRightOf="@id/imageButton25"
+        app:layout_constraintTop_toTopOf="@id/imageButton25" />
+
+    <TextView
+        android:id="@+id/textView81"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You say no"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="@id/imageButton26"
+        app:layout_constraintLeft_toLeftOf="@id/imageButton26"
+        app:layout_constraintRight_toRightOf="@id/imageButton26"
+        app:layout_constraintTop_toTopOf="@id/imageButton26" />
+
 </android.support.constraint.ConstraintLayout>
